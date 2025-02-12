@@ -1,0 +1,32 @@
+body {
+    padding: 25px 50px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.photo-frame {
+    width: 400px; 
+    height: 500px;
+    border: 5px solid white; /* Frame border */
+    border-radius: 20%; /* Squircle effect */
+    overflow: hidden; /* Ensures image stays inside */
+    margin-right: 150px; /* Space between frame and text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Optional soft shadow */
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 30%; /* Matches the squircle frame */
+}
