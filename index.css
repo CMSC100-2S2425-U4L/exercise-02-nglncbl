@@ -1,32 +1,236 @@
+/* Custom cursor with SVG for the body */
 body {
-    padding: 25px 50px;
-    background-color: pink;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23A59D84" stroke="%23A59D84" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+    background-color: #ECEBDE; /* Light background color */
+}
+
+
+/* Header design with logo on the left */
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECEBDE; 
+    border-bottom: 3px solid #A59D84; 
+    padding: 40px;
+    position: relative;
+}
+
+/* Layout for hero section, which includes character illustration, name, mini intro, and social media */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+
+/* Character illustration image sizing */
+.character-illustration img {
+    width: 600px;
+    left: 10px;
+}
+
+/* Text section for name and introduction */
+.text-section {
+    text-align: left;
+}
+
+.text-section img {
+    width: 500px; 
+    height: auto; 
+}
+
+
+/* Layout for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Resizing and positioning of social media icons */
+.social-icons img {
+    width: 80px;
+    margin: 10px;
+    margin-top: -10px;
+}
+
+/* Logo layout positioned in the left upper side */
+.logo {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+}
+
+/* Logo image size */
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Styling for mini introduction section */
+.skills {
+    font-size: 18px;
+    color: #A59D84; 
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+/* Layout for previous project section */
+.prevproject-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Previous project text size and layout */
+.previous-project img {
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* Layout for project images */
+.projects-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    text-align: center;
+}
+
+/* Resizing and positioning of project images */
+.projects-section img {
+    border: 8px solid #A59D84; 
+    background-color: white;
+    padding: 10px;
     align-items: center;
 }
 
-.container {
-    display: flex;
-    align-items: center;
+/* Layout for the first set of project images */
+.projects-section img:nth-child(-n+3) {
+    width: 25vw;
+    height: 25vw;
 }
 
-.photo-frame {
-    width: 400px; 
-    height: 500px;
-    border: 5px solid white; /* Frame border */
-    border-radius: 20%; /* Squircle effect */
-    overflow: hidden; /* Ensures image stays inside */
-    margin-right: 150px; /* Space between frame and text */
+/* Layout for the second set of project images */
+.projects-section img:nth-child(n+4) {
+    width: 35vw;
+    height: 20vw;
+}
+
+/* Section for skills text */
+.text1-project {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 95%; 
+    text-align: center;
+    padding: 40px;
+}
+
+/* Skills image resizing */
+.text1-project img {
+    width: 45vw;
+    max-width: 90%; 
+    height: auto;
+}
+
+/* Layout for skills section */
+.skills-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Optional soft shadow */
+    height: 120vh; 
+    margin-top: -250px;
 }
 
-.photo-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 30%; /* Matches the squircle frame */
+/* Resizing of skills images */
+.skills-section img {
+    width: 45vw;
+    max-width: 200%; 
+    max-height: 200%;
+    object-fit: contain; 
+    border: 8px solid #A59D84;
+}
+
+/* Styling for autobiography text */
+.text2-project img {
+    width: 650px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -120px;
+}
+
+/* Layout for the About Me section */
+.aboutme-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 40px;
+    gap: 20px; 
+
+/* Styling for "ABOUT ME" title */
+.about_me {
+    font-size: 32px; 
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #A59D84;
+    margin-bottom: 10px;
+}
+
+/* Layout for image in About Me section */
+.ange-image img {
+    width: 400px; 
+    height: auto;
+    margin-left: auto;
+    border: 8px solid #A59D84;
+    background-color: white;
+}
+
+/* Styling for info text */
+.info {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: justify;
+    width: 60%;
+    background-color: #A59D84;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8; 
+    margin-bottom: 15px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* List items in navigation */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Styling for navigation links */
+nav ul li a {   
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }

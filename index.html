@@ -4,52 +4,102 @@
 <!-- @code description: Creating a single-page static portfolio website -->
 
 <!DOCTYPE html>
-<html> <!-- Opening Tag -->
-<head> <!-- Contains the title of the webpage -->
-    <style>
-    h1{
-    text-align: right;
-    letter-spacing: 5px;
-    font-family: Bebas Neue;
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-
-    }
-
-    p{
-    text-align: center;
-    letter-spacing: 5px;
-    font-family: Garamond;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    }
-
-    h4{
-    font-family: Papyrus;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20px;
-    text-align: center;
-    letter-spacing: 12px;
-    }
-
-    </style>
-    
-    <title>My Portfolio</title>
-    <!-- <h1>MOVIE TICKETS</h1>
-    <p>BOOK YOUR TICKETS NOW!</p> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-    <link rel="stylesheet" href="index.css"/>
-
 <body>
-    <div class="container">
-        <div class="photo-frame">
-            <img src="photo.jpg" alt="Your Photo">
+    <!-- Header with logo -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Logo image -->
+            </div>
         </div>
-        <div class="content">
-            <legend><h1>ANGELINE S. CUBELO</h1></legend> 
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="hero-section">
+        <!-- Character Logo -->
+        <div class="character-illustration">
+            <img src="profile.png" alt="Angeline"> <!-- Profile picture -->
         </div>
+        <!-- Name and Info -->
+        <div class="text-section">
+            <img src="name.png" alt="Text"> <!-- Name image -->
+            <h5 class="skills">BSCS Student | '23 | Digital Artist</h5> <!-- Skills info -->
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/angeline.cubelo.12/"><img src="fb logo.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ngln_cbl/"><img src="insta logo.png" alt="Instagram"></a>
+                <a href="mailto:ascubelo@up.edu.ph"><img src="email logo.png" alt="Email"></a> <!-- Email link -->
+            </div>
+        </div>        
+    </section>
+
+    <!-- Previous Projects Section -->
+    <section class="prevproj-section">
+        <!-- Text for Previous Projects -->
+        <div class="previous-project">
+            <img src="project text.png" alt="Project Text"> <!-- Previous project title -->
+        </div>
+
+        <!-- List of Projects -->
+        <div class="projects-section">
+            <img src="image1.jpg" alt="Project 1">
+            <img src="image2.jpg" alt="Project 2">
+            <img src="image3.jpg" alt="Project 3">
+            <img src="image4.jpg" alt="Project 4">
+            <img src="image5.png" alt="Project 5">
+        </div>      
+    </section>
+
+    <!-- Skills Section -->
+    <section class="text1-section">
+        <!-- Skills Text -->
+        <div class="text1-project">
+            <img src="skills text.png" alt="Skills Text"> <!-- Skills title -->
+        </div>
+        <!-- Skills Images -->
+        <div class="skills-section">
+            <img src="skills image.png" alt="Skills"> <!-- Skills image -->
+        </div>      
+    </section>
+
+    <!-- Autobiography Section -->
+    <div class="text2-project">
+        <!-- Autobiography Text -->
+        <img src="autobiography text.png" alt="Autobiography Text"> <!-- Autobiography title -->
     </div>
+    <!-- About Me Section -->
+    <section class="aboutme-section">
+        <!-- Image of myself -->
+        <div class="ange-image">
+            <img src="ange.jpg" alt="Angeline"> <!-- Self portrait image -->
+        </div>
+        <!-- About Me Title -->
+        <h1 class="about_me"> ABOUT ME</h1>
+        <!-- Autobiography content -->
+        <p class="info">
+            My name is Angeline S. Cubelo, and I was born on the 12th of January, 2005, in Quezon City. 
+            I am currently a BS Computer Science sophomore student at the University of the Philippines - Los Baños.
+            I love outdoor activities and exploring new places, as they give me a sense of adventure and freedom. 
+            Whether it’s hiking up mountains, taking long walks around campus, or simply appreciating nature, 
+            I find joy in being surrounded by the beauty of the world.
+            <br><br>
+            Growing up, I was always curious and eager to learn. I had a natural inclination toward problem-solving, 
+            which later led me to develop an interest in programming and technology. However, my journey into Computer Science 
+            was not entirely driven by passion as it was a practical choice, influenced by the prospect of a stable career 
+            and the ability to provide for my family. Beyond academics, I enjoy listening to music, especially indie pop, as it 
+            helps me focus and relax. I also love reading, painting, and running which allow me to express myself and find balance 
+            amidst the demands of my studies.
+            <br><br>
+            As I continue my journey, I hope to not only excel in my chosen field but also discover what truly makes me fulfilled. 
+            Life is a constant process of learning, and I am determined to make the most out of every opportunity that comes my way.
+        </p>
+    </section>
 </body>
-    
+</html>
